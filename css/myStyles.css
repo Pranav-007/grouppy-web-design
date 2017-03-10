@@ -166,8 +166,7 @@ body {
     margin-left: 20%;
 }
 /* form control*/
-.form-control
-{
-    text-align: center;
-    font-family:"Arial";
+.input-group-btn:not(:first-child):not(:last-child) > .btn {
+    border-radius: 0;
+
 }
