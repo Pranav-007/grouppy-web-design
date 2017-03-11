@@ -52,6 +52,7 @@
             <div class="col-sm-10">
                 <input type="email" class="form-control" id="email" placeholder="abc@example.com">
             </div>
+            <div id="emailError" style=""></div>
         </div>
 
         <div class="form-group">
@@ -63,6 +64,26 @@
 
 
 </div>
+<script>
+    function validateDetails() {
+
+    }
+
+    function validateEmail(){
+            var x = document.forms["myForm"]["email"].value;
+            var atpos = x.indexOf("@");
+            var dotpos = x.lastIndexOf(".");
+            if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+                document.getElementsById("emailError").innerHTML="";
+                return false;
+            }
+
+    }
+
+
+</script>
+
+
 
 </body>
 </html>
