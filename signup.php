@@ -21,10 +21,38 @@
 <div class="jumbotron">
     <h1>Grouppy</h1>
     <h4>Registration</h4>
+    <h6 id="demo1" class="collapse"><form id="lform" class="form-inline">
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">Login</button>
+        </form>
+    </h6>
+    <h6>
+        <nav>
+            <ul class="nav masthead-nav">
+                <li ><a href="index.php">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li class="active" ><a href="#"><span class="glyphicon glyphicon-user"></span>SignIn</a>
+
+                </li>
+
+            </ul>
+        </nav>
+
+
+
+    </h6>
 </div>
 <div class="container">
 
-    <form class="form-horizontal" name="myForm">
+    <form class="form-horizontal" name="myForm" onsubmit="return validateForm()">
         <div class="form-group">
             <label class="control-label col-sm-2" for="usrname">Username:</label>
             <div class="col-sm-10">
@@ -57,13 +85,50 @@
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default" >Sign In</button>
+                <button type="submit" class="btn btn-default"  >Sign In</button>
             </div>
         </div>
     </form>
-
+<div class="link">
+    Already a   <a href="#" data-toggle="collapse" data-target="#demo1"><span class="glyphicon glyphicon-user"></span>User</a>
+</div>
 
 </div>
+
+<script>
+    setInterval(function() {
+
+        var w = window.innerWidth
+            || document.documentElement.clientWidth
+            || document.body.clientWidth;
+
+        if(w<1000)
+        {
+            document.getElementById("lform").className="";
+        }
+        else{
+            document.getElementById("lform").className="form-inline";
+
+        }
+    },10);
+
+function validateForm() {
+
+}
+
+
+function validateusrName()
+{
+
+    var x = document.forms["myForm"]["usrname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+
+</script>
+
 
 
 </body>
