@@ -1,0 +1,30 @@
+.form-horizontal{
+    max-width: 100%;
+}
+.jumbotron{
+    background: #404d44;
+    text-align: center;
+}
+@media (min-width: 500px ) {
+    .form-horizontal{
+        max-width: 45%;
+    }
+    .control-label{
+        float: left;
+    }
+    .jumbotron{
+        text-align: left;
+    }
+
+ }
+@media (min-width: 573px) {
+    .form-horizontal{
+        max-width: 60%;
+    }
+    .control-label {
+        float: left;
+    }
+    .jumbotron{
+        text-align: left;
+    }
+}

@@ -15,6 +15,7 @@
     <?php
     include 'cdn/CDN.php';
     ?>
+    <link rel="stylesheet" href="css/myStyles.css">
 </head>
 
 <body>

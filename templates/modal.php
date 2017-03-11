@@ -9,7 +9,7 @@
         </div>
 
         <button class="btn btn-success btn-block" style="margin: 5px 0px;">Login</button><button class="btn btn-primary btn-block" data-toggle="collapse" data-target="#demo">Cancel</button>
-        <p>Not a member? <a href="#">Sign Up</a></p>
+        <p>Not a member? <a href="signup.php">Sign Up</a></p>
         <p>Forgot <a href="#">Password?</a></p>
         <br>
     </form>
