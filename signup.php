@@ -24,7 +24,7 @@
 </div>
 <div class="container">
 
-    <form class="form-horizontal">
+    <form class="form-horizontal" name="myForm">
         <div class="form-group">
             <label class="control-label col-sm-2" for="usrname">Username:</label>
             <div class="col-sm-10">
@@ -52,37 +52,18 @@
             <div class="col-sm-10">
                 <input type="email" class="form-control" id="email" placeholder="abc@example.com">
             </div>
-            <div id="emailError" style=""></div>
+            <div id="emailError" style="color: #d0d5d8;" ></div>
         </div>
 
         <div class="form-group">
             <div class="col-sm-offset-2 col-sm-10">
-                <button type="submit" class="btn btn-default">Sign In</button>
+                <button type="submit" class="btn btn-default" >Sign In</button>
             </div>
         </div>
     </form>
 
 
 </div>
-<script>
-    function validateDetails() {
-
-    }
-
-    function validateEmail(){
-            var x = document.forms["myForm"]["email"].value;
-            var atpos = x.indexOf("@");
-            var dotpos = x.lastIndexOf(".");
-            if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
-                document.getElementsById("emailError").innerHTML="";
-                return false;
-            }
-
-    }
-
-
-</script>
-
 
 
 </body>
