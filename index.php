@@ -21,7 +21,5 @@
 <body>
 <?php include 'templates/cover.php'; ?>
 
-
-
 </body>
 </html>
