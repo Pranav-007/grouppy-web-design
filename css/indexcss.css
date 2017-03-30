@@ -19,7 +19,7 @@ body{
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color:white;
-    background-color: #ed0f1e3;
+    background-color: #ed0f1e;
 }
 .navbar-default .navbar-nav > li > a {
     color: White;

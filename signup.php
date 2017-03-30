@@ -22,12 +22,12 @@
         <!-- Mixins-->
         <!-- Pen Title-->
         <div class="pen-title">
-            <h1>Grouppy Login </h1>
+            <h1>Grouppy SignIn </h1>
         </div>
         <div class="container">
             <div class="card"></div>
             <div class="card">
-                <h1 class="title">Login</h1>
+                <h1 class="title">Signup</h1>
                 <form>
                    <div id="nameInput">
                     <div class="input-container">
@@ -47,6 +47,12 @@
                         <div class="bar"></div>
                     </div>
                     <div class="input-container">
+                        <input type="email" id="" required="required"/>
+                        <label for="Username">Username</label>
+                        <div class="bar"></div>
+                    </div>
+
+                    <div class="input-container">
                         <input type="password" id="Password" required="required"/>
                         <label for="Password">Password</label>
                         <div class="bar"></div>
@@ -57,9 +63,9 @@
                         <div class="bar"></div>
                     </div>
                     <div class="button-container">
-                        <button><span>Signup</span></button>
+                        <button><span>SignIn</span></button>
                     </div>
-                    <div class="footer"><a href="#">Already a User</a></div>
+                    <div class="footer"><a href="./login.php">Already a User</a></div>
                 </form>
             </div>
 
