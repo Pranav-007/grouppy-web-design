@@ -71,6 +71,9 @@
 </div>
 
 </div>
+<?php
+ include 'templates/footer.php';
+?>
 <script>
     $("[data-toggle=popover]").popover({
         html: true,
