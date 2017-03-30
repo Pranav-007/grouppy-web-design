@@ -1,16 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="">
-    <title>Grouppy | User Registration </title>
+
+    <title>Grouppy | Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
     <link rel="stylesheet" href="css/loginpage.css">
 </head>
@@ -29,20 +33,8 @@
             <div class="card">
                 <h1 class="title">Login</h1>
                 <form>
-                   <div id="nameInput">
                     <div class="input-container">
-                        <input type="text" id="fname" required="required"/>
-                        <label for="fname">First Name</label>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="input-container">
-                        <input type="text" id="lname" required="required"/>
-                        <label for="lname">Last Name</label>
-                        <div class="bar"></div>
-                    </div>
-                   </div>
-                    <div class="input-container">
-                        <input type="text" id="username" required="required"/>
+                        <input type="text" id="Username" required="required"/>
                         <label for="Username">Username</label>
                         <div class="bar"></div>
                     </div>
@@ -51,20 +43,15 @@
                         <label for="Password">Password</label>
                         <div class="bar"></div>
                     </div>
-                    <div class="input-container">
-                        <input type="password" id="rePassword" required="required"/>
-                        <label for="RePassword">Re-Enter Password</label>
-                        <div class="bar"></div>
-                    </div>
                     <div class="button-container">
-                        <button><span>Signup</span></button>
+                        <button><span>Login</span></button>
                     </div>
-                    <div class="footer"><a href="#">Already a User</a></div>
+                    <div class="footer"><a href="#">Forgot your password?</a></div>
                 </form>
             </div>
 
-            <!-- Portfolio--><a id="portfolio" href="./index.php" title="View my portfolio!"><i class="fa fa-link">Home</i></a>
-        </div>
+        <!-- Portfolio--><a id="portfolio" href="./index.php" title="View my portfolio!"><i class="fa fa-link">Home</i></a>
     </div>
+</div>
 </body>
 </html>
