@@ -1,0 +1,54 @@
+.inputBox
+{
+    box-shadow: 5px 5px 5px #575757;
+}
+.inputBox-large-width
+{
+    max-width: 85%;
+
+}
+.inputBox-med-width
+{
+    max-width: 60%;
+    margin-left: 20%;
+}
+@media (max-width: 766px) {
+
+    .inputBox-med-width
+    {
+        max-width: 100%;
+        margin-left: 5%;
+    }
+}
+.inputBox-small-width
+{
+    max-width: 40%;
+    margin-right: 5%;
+}
+.headerS
+{   margin: auto;
+    float: left;
+    position: fixed;
+    top: 0;
+    text-align: left;
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+}
+.inputBox-inline
+{
+    display: inline-block;
+}
+.inputBox-large-height
+{
+    height: 10%;
+    font-size: 16pt;
+
+}
+.button-med-width
+{  margin-top: 5%;
+    max-width: 60%;
+    margin-left:20%;
+    height: 20%;
+    font-size:14pt;
+
+}

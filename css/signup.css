@@ -1,1 +1,91 @@
+.img-rounded
+{
+    float: left;
+    top:0;
+}
 
+.card
+{
+    margin-top: 10%;
+    float: left;
+    width: 100%;
+
+}
+@media (min-width: 940px){
+
+
+    .card
+    {
+        margin-top: 10%;
+        margin-right: 30%;
+        margin-left: 30%;
+        max-width: 40%;
+
+    }
+    
+}
+@media (max-width: 414px ){
+
+.card
+{
+margin-top: 10%;
+    float: left;
+    width: 100%;
+
+}
+    .button-med-width
+    {  margin-top: 5%;
+        max-width: 60%;
+        margin-left:15%;
+        height: 20%;
+        font-size:10pt;
+
+    }
+    .inputBox-large-height
+    {
+        height: 10%;
+        font-size: 11pt;
+
+    }
+}
+.progresS{
+    margin-top: 2%;
+    max-width:85%;
+}
+.progBorder1{
+    border-bottom: 5px Solid red;
+    width:20%;
+
+}
+.progBorder{
+    border-bottom: 5px Solid #ccc7b7;
+    width:20%;
+
+}
+.progBorder2{
+    border-bottom: 5px Solid yellow;
+    width:20%;
+
+}
+.progBorde3{
+    border-bottom: 5px Solid orange;
+    width:20%;
+
+}
+.progBorder4{
+    border-bottom: 5px Solid green;
+    width:20%;
+
+}
+
+
+
+
+#lname
+{
+    margin-right: 0%;
+}
+.card h6{
+    margin-top: 5%;
+    font-family: "Arial Black";
+}

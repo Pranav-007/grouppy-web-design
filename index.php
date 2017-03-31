@@ -17,6 +17,7 @@
 
 
     <link rel="stylesheet" href="css/indexcss.css">
+    <link rel="stylesheet" href="css/mycustomCss.css">
 </head>
 
 <body>
@@ -57,14 +58,10 @@
         <h1>Make Your Network to Share Your Work</h1>
         <BR>
         <BR>
-        <div class="searchField">
-            <div class="col-lg-6">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-search"></span>&nbspSearch</button>
-                    </span>
-                </div>
+        <div class="searchField inputBox inputBox-med-width">
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search"></span></span>
+                <input type="text" class="form-control" placeholder="Search your Network here...." aria-describedby="sizing-addon1">
             </div>
         </div>
     </div>

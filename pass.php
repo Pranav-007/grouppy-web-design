@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Nikhil
+ * Date: 3/31/2017
+ * Time: 12:20 AM
+ */
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,29 +28,35 @@
 
 <body>
 <div class="headerS">
-<img src="" alt="" class="img-rounded" width="40px" height="40px">Grouppy
+    <img src="" alt="" class="img-rounded" width="40px" height="40px">Grouppy
 </div>
 <br>
 <div class="container">
     <div class="card">
         <div>
-        <h1>What's your name?</h1>
+            <h1>Set your Password</h1>
         </div>
-        <h4>Your name will be displayed for your profile in Grouppy</h4>
+        <h4>Choose a password to sign-in Grouppy</h4>
         <br>
-        <h6>Your Name:</h6>
+        <h6>Password</h6>
         <form name="nameForm">
-        <input name="fname" class="form-control inputBox-small-width inputBox-inline inputBox inputBox-large-height" placeholder="First Name" type="text" id="fname">
-        <input name="lname" class="form-control inputBox-small-width inputBox-inline inputBox inputBox-large-height" placeholder="Last Name" type="text" id="lname">
-        <h6>Username:</h6>
-        <input name="uname" class="form-control inputBox-large-width inputBox inputBox-large-height" placeholder="Username" type="text" id="username">
+            <input name="pass" class="form-control inputBox-large-width inputBox inputBox-large-height" placeholder="Enter your Password" type="password" id="password">
+            <div class="progresS">
+                <div class="inputBox-inline progBorder" id="progress1"></div>
+                <div class="inputBox-inline progBorder" id="progress2"></div>
+                <div class="inputBox-inline progBorder" id="progress3"></div>
+                <div class="inputBox-inline progBorder" id="progress4"></div>
+                <div class="inputBox-inline progHeader" id="progheader">Weak</div>
+
+            </div>
             <h6><div style="font-family: Arial;">Please enter the username that is all lower case and username will be unique containing only letters, numbers, hyphens,and underscore</div></h6>
-        <Button class="btn btn-default button-med-width">Continue to Password&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></Button>
+            <Button class="btn btn-default button-med-width">Get to Network&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></Button>
         </form>
+
     </div>
     <p id="demo"></p>
 </div>
-<script src="js/signup.js"></script>
+
 
 </body>
 </html>

@@ -47,6 +47,7 @@
                         <button><span>Login</span></button>
                     </div>
                     <div class="footer"><a href="#">Forgot your password?</a></div>
+                    <div class="footer"><a href="#">not a User</a></div>
                 </form>
             </div>
 
