@@ -62,13 +62,12 @@
 </div>
 
 <div class="container">
+    <div id="wrapper">
+    <div id="dept0" class="row dept">
+            <input class=" form-control inputBox-inline inputBox-small-width" type="email" id="email" placeholder="Department">
 
-    <div class="row">
-        <div class="col-sm-6 col-md-3">
-            <input type="email" class="form-control" id="email" placeholder="Department">
-        </div>
 
-        <div class="col-sm-6 col-md-3">
+        <div class="inputBox-inline">
             <select>
                 <option value="none">SELECT TEACHER</option>
                 <option value=""></option>
@@ -78,22 +77,19 @@
             </select>
         </div>
 
-        <div class="col-sm-12 col-md-6"><textarea rows="1" cols="40" placeholder="TextArea"></textarea></div>
+        <div class="inputBox-inline"><textarea rows="1" cols="40" placeholder="TextArea"></textarea></div>
+        <button class="btn btn-default inputBox-inline"><span class="glyphicon glyphicon-trash"></span></button>
     </div>
+    </div>
+<div class="dept1">
+    <button type="submit" onclick="createComponents()" class="btn btn-default">+ ADD</button>
+    <br>
 
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-            <button type="submit" class="btn btn-default">+ ADD</button>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-            <br><button type="submit" class="btn btn-primary">Submit!</button>
-        </div>
-    </div>
+    <button style="margin-top: 2%" type="submit" class="btn btn-primary">Submit!</button>
+       </div>
 </div>
 
+<script src="./js/dept.js"></script>
 
 </body>
 </html>
