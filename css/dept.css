@@ -53,10 +53,15 @@
 }
 .dept1 {
     position: relative;
+    bottom: 0;
 }
 
 
 .dept{
     display: inline-block;
 
+}
+.inputBox-inline
+{
+    display: inline-block;
 }

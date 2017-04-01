@@ -14,9 +14,9 @@
     <title>Department</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <?php
+        include 'cdn/CDN.php';
+    ?>
     <link rel="stylesheet" type="text/css" href="./css/dept.css">
 </head>
 
@@ -60,33 +60,41 @@
         </div><!-- /.container-fluid -->
     </nav>
 </div>
-
 <div class="container">
-    <div id="wrapper">
-    <div id="dept0" class="row dept">
-            <input class=" form-control inputBox-inline inputBox-small-width" type="email" id="email" placeholder="Department">
 
+<div class="wrapper">
+    <div id="dept0" class="dept inputBox-inline" style="margin-top:2%;">
+     <form class="form-inline">
+         <div class="form-group">
+             <input class="form-control" type="text" placeholder="Enter department name" id="deptname" name="deptname">
+         </div>
+         <div class="form-group">
+             <div class="dropdown" style="font-size: 16pt;">
+                 <button class="btn btn-xs btn-default dropdown-toggle" style="font-size: 16pt; margin-bottom: 5%; width:200px; font-family: 'Lobster', cursive; margin-left: 5%;" type="button" id="dropdownMenu1" data-toggle="dropdown">Head of department</button>
+                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Unsorted <span class="badge">12</span></a></li>
+                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action <span class="badge">42</span></a></li>
+                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here <span class="badge">42</span></a></li>
+                 </ul>
+             </div>
 
-        <div class="inputBox-inline">
-            <select>
-                <option value="none">SELECT TEACHER</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
-        </div>
+         </div>
+             <div class="form-group">
 
-        <div class="inputBox-inline"><textarea rows="1" cols="40" placeholder="TextArea"></textarea></div>
-        <button class="btn btn-default inputBox-inline"><span class="glyphicon glyphicon-trash"></span></button>
+                 <textarea class="form-control" placeholder="Description" style="margin-left:10%;" rows="1" id="comment"></textarea>
+             </div>
+         <div class="form-group" style="margin-left: 2%;" ><button onclick="removeComponent()" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button></div>
+
+     </form>
+
     </div>
-    </div>
-<div class="dept1">
-    <button type="submit" onclick="createComponents()" class="btn btn-default">+ ADD</button>
-    <br>
+</div>
+    <div class="dept1" style="margin-top: 20px;">
+        <button type="submit" onclick="createComponents()" class="btn btn-default">+ ADD another Department</button>
+        <button style="margin-left: 5%;" type="submit" class="btn btn-primary">Submit!</button>
 
-    <button style="margin-top: 2%" type="submit" class="btn btn-primary">Submit!</button>
-       </div>
+
+    </div>
 </div>
 
 <script src="./js/dept.js"></script>

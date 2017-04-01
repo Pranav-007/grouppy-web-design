@@ -11,3 +11,13 @@ function createComponents() {
     org.parentNode.appendChild(clone);
     wrap.appendChild(org);
 }
+function removeComponent()
+{
+    if(dept_id!=0){
+    var org = document.getElementById("dept"+dept_id);
+    org.parentNode.removeChild(org);
+    --dept_id;}
+    else ;
+
+    return false;
+}
