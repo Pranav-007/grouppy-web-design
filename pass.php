@@ -39,15 +39,15 @@
         <h4>Choose a password to sign-in Grouppy</h4>
         <br>
         <h6>Password</h6>
-        <form name="nameForm">
-            <input name="pass" onkeyup="CheckPasswordStrength(this.value)" class="form-control inputBox-large-width inputBox inputBox-large-height" placeholder="Enter your Password" type="password" id="password">
+        <form name="nameForm" method="post">
+            <input  name="pass" onkeyup="CheckPasswordStrength(this.value)" class="form-control inputBox-large-width inputBox inputBox-large-height" placeholder="Enter your Password" type="password" id="password">
             <div class="progress" style="max-width: 85%; margin-top: 2%">
                 <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0"
                      aria-valuemin="0" aria-valuemax="100" style="width:0%;" id="prog">
                     <span id="password_strength"></span>
                 </div>
             </div>
-            <h6><div style="font-family: Arial;">Please enter the username that is all lower case and username will be unique containing only letters, numbers, hyphens,and underscore</div></h6>
+            <h6><div style="font-family: Arial;">Password mus be at-least 6 characters long. Password should be strong <br>Example:abc_123</div></h6>
             <Button class="btn btn-default button-med-width">Get to Network&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></Button>
         </form>
 
