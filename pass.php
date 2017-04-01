@@ -16,12 +16,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="">
-    <title>Grouppy | User Registration </title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-    <link rel="stylesheet" href="css/mycustomCss.css">
+    <title>Grouppy | Get Password protection </title>
+    <?php
+    include 'cdn/CDN.php';
+    ?>
     <link rel="stylesheet" href="css/signup.css">
 
 </head>
@@ -47,7 +45,7 @@
                     <span id="password_strength"></span>
                 </div>
             </div>
-            <h6><div style="font-family: Arial;">Password mus be at-least 6 characters long. Password should be strong <br>Example:abc_123</div></h6>
+            <h6><div style="font-family: 'Pavanam', sans-serif;">Password mus be at-least 6 characters long. Password should be strong <br>Example:abc_123</div></h6>
             <Button class="btn btn-default button-med-width">Get to Network&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></Button>
         </form>
 
