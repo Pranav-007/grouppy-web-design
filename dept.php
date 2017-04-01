@@ -83,14 +83,16 @@
 
                  <textarea class="form-control" placeholder="Description" style="margin-left:10%;" rows="1" id="comment"></textarea>
              </div>
-         <div class="form-group" style="margin-left: 2%;" ><button onclick="removeComponent()" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button></div>
 
      </form>
 
     </div>
 </div>
     <div class="dept1" style="margin-top: 20px;">
+
         <button type="submit" onclick="createComponents()" class="btn btn-default">+ ADD another Department</button>
+        <button style="margin-left: 5%;" onclick="removeComponent()" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span></button>
+
         <button style="margin-left: 5%;" type="submit" class="btn btn-primary">Submit!</button>
 
 
