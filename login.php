@@ -14,44 +14,35 @@
     <?php
     include 'cdn/CDN.php';
     ?>
+    <link rel="stylesheet" href="css/signup.css">
 
-    <link rel="stylesheet" href="css/loginpage.css">
 </head>
 
 <body>
+
+<div class="headerS">
+    <img src="" alt="" class="img-rounded" width="40px" height="40px">Grouppy
+</div>
+<br>
 <div class="container">
-    <div class="row">
-
-        <!-- Mixins-->
-        <!-- Pen Title-->
-        <div class="pen-title">
-            <h1>Grouppy Login </h1>
+    <div class="card">
+        <div>
+            <h1><span class="glyphicon glyphicon-user"></span>Login to Grouppy</h1>
         </div>
-        <div class="container">
-            <div class="card"></div>
-            <div class="card">
-                <h1 class="title">Login</h1>
-                <form>
-                    <div class="input-container">
-                        <input type="text" id="Username" required="required"/>
-                        <label for="Username">Username</label>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="input-container">
-                        <input type="password" id="Password" required="required"/>
-                        <label for="Password">Password</label>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="button-container">
-                        <button><span>Login</span></button>
-                    </div>
-                    <div class="footer"><a href="#">Forgot your password?</a></div>
-                    <div class="footer"><a href="#">not a User</a></div>
-                </form>
-            </div>
+        <br>
 
-        <!-- Portfolio--><a id="portfolio" href="./index.php" title="View my portfolio!"><i class="fa fa-link">Home</i></a>
+        <form name="nameForm" method="post">
+            <h6>Username:</h6>
+            <input name="uname" class="form-control inputBox-large-width inputBox inputBox-large-height" placeholder="Username" type="text" id="username">
+            <h6>Password:</h6>
+
+            <input  name="pass"  class="form-control inputBox-large-width inputBox inputBox-large-height" placeholder="Password" type="password" id="password">
+
+            <Button class="btn btn-default button-med-width">Login to Grouppy&nbsp<span class="glyphicon glyphicon-arrow-right"></span></Button>
+        </form>
+
     </div>
+    <p id="demo"></p>
 </div>
 </body>
 </html>
