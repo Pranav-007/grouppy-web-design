@@ -1,0 +1,129 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../images/material-des-back.png");
+    background-repeat: no-repeat;
+    background-size:60% 100%;
+    background-position: right;
+
+}
+
+.navbar-inverse
+{
+    border: 0;
+
+    font-family: 'Lobster', cursive;
+    background: transparent;
+}
+
+.navbar-inverse .navbar-brand{
+    color: black;
+    font-size: 36pt;
+}
+.navbar-inverse .navbar-nav > li > a{
+    color: white;
+    font-size:16pt;
+}
+.navbar-inverse .navbar-nav > li > a :hover{
+    color: white;
+    font-size:16pt;
+}
+.navbar-inverse .navbar-brand:hover{
+    color: rgba(231, 181, 61, 0.9);
+}
+.btn-primary {
+    background-color: #5bc0de;
+}
+.formNet {
+    margin-top: 25%;
+
+}
+.noLink:hover{
+    color: black;
+}
+#formNetwork
+{
+    margin-left: 5%;
+}
+.heading {
+    font-family: 'Lobster', cursive;
+    font-size: 20pt;
+    margin-left: 5%;
+    margin-bottom:10%;
+}
+
+#agree-line
+{
+    font-family:'Lobster', cursive;
+    font-size: 10pt;
+
+}
+#networkName::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: 'Lobster', cursive;
+}
+#networkName::-moz-placeholder { /* Firefox 19+ */
+    font-family: 'Lobster', cursive;
+}
+#networkName:-ms-input-placeholder { /* IE 10+ */
+    font-family: 'Lobster', cursive;
+}
+#networkName:-moz-placeholder { /* Firefox 18- */
+    font-family: 'Lobster', cursive;
+}
+
+
+    #left-card{
+        float: left;
+
+        width: 35%;
+        height: inherit;
+    }
+    @media (max-width:766px) {
+
+        #left-card{
+
+            width: 90%;
+            height: 100%;
+
+        }
+        html,body{
+            background-image: url("../images/material-des-background.jpg");
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            background-position: right;
+        }
+
+        .navbar-inverse
+        {
+            border: 0;
+
+            font-family: 'Lobster', cursive;
+            background: black;
+
+        }
+
+
+        .navbar-inverse .navbar-brand{
+            color: white;
+            font-size: 20pt;
+        }
+        .navbar-inverse .navbar-nav > li > a{
+            color: white;
+            font-size:16pt;
+        }
+        .navbar-inverse .navbar-nav > li > a {
+            color: white;
+            font-size:16pt;
+        }
+        .navbar-inverse .navbar-brand:hover{
+            color: rgba(231, 181, 61, 0.9);
+        }
+    #agree-line
+    {
+        font-family:'Lobster', cursive;
+        font-size: 16pt;
+
+    }
+
+    }

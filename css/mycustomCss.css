@@ -7,6 +7,14 @@
     max-width: 85%;
 
 }
+.inputBox-large-width-1
+{
+    max-width: 100%;
+
+}
+.fontcursive{
+    font-family: 'Lobster', cursive;
+}
 .inputBox-med-width
 {
     max-width: 60%;
@@ -48,6 +56,15 @@
 {  margin-top: 5%;
     max-width: 60%;
     margin-left:20%;
+    height: 20%;
+    font-size:14pt;
+
+}
+
+.button-large-width
+{  margin-top: 5%;
+    max-width:80%;
+    margin-left:15%;
     height: 20%;
     font-size:14pt;
 

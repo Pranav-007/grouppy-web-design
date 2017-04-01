@@ -21,36 +21,52 @@
     <?php
     include 'cdn/CDN.php';
     ?>
-    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/createnetwork.css">
 
 </head>
 
 <body>
-<div class="headerS">
-    <img src="" alt="" class="img-rounded" width="40px" height="40px">Grouppy
-</div>
-<br>
-    <div class="card">
-        <div>
-            <h1>Set your Password</h1>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Grouppy</a>
         </div>
-        <h4>Choose a password to sign-in Grouppy</h4>
-        <br>
-        <h6>Password</h6>
-        <form name="nameForm" method="post">
-            <input  name="pass" onkeyup="CheckPasswordStrength(this.value)" class="form-control inputBox-large-width inputBox inputBox-large-height" placeholder="Enter your Password" type="password" id="password">
-            <div class="progress" style="max-width: 85%; margin-top: 2%">
-                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0"
-                     aria-valuemin="0" aria-valuemax="100" style="width:0%;" id="prog">
-                    <span id="password_strength"></span>
-                </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a href="" class="noLink">looking to an existing network?</a></li>
+                <li><a href="#" class="btn btn-primary">Join Now</a> </li>
+            </ul>
+         </div>
+    </div>
+</nav>
+
+<div id="left-card">
+
+        <div class="formNet">
+            <div class="heading">
+                Create a New Network
             </div>
-            <h6><div style="font-family: 'Pavanam', sans-serif;">Password mus be at-least 6 characters long. Password should be strong <br>Example:abc_123</div></h6>
-            <Button class="btn btn-default button-med-width">Get to Network&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></Button>
-        </form>
+            <form name="nameForm" method="post" id="formNetwork">
+
+                <input  name="pass"  class="form-control inputBox-large-width-1 inputBox inputBox-large-height fontCursive" placeholder="Type your network name here" type="text" id="networkName">
+                <div id="agree-line"><input type="checkbox" name="agreement" value="yes" style="margin-top: 5%;">&nbsp;I agree all terms and condition<br></div>
+                <div id="errormsg" color=""></div>
+                <Button class="btn btn-default button-large-width" style="font-size: 20pt;margin-left: 30%">Next&nbsp;<span class="glyphicon glyphicon-arrow-right"></span></Button>
+            </form>
+        </div>
 
     </div>
-    <p id="demo"></p>
+
+    <div id="right-card">
+        <img src="images/anim-donk.gif" align="center" width="400px" height="400px" style="margin-top: 5%; margin-left: 30%;">
+    </div>
 
 
 </body>
