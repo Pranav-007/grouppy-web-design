@@ -2,17 +2,18 @@
  * Created by Nikhil on 3/30/2017.
  */
 $(document).ready(function(){
-var flag=false;
+
     $("input").keydown(function(){
 
         if(validateName()&&validateUserName()){
-           flag=true;
             $("Button").removeClass("btn-default");
             $("Button").addClass("btn-success");
 
 
         }
         else {
+            $("Button").removeClass("btn-success");
+            $("Button").addClass("btn-default");
 
         }
 
@@ -21,7 +22,7 @@ var flag=false;
 });
 function validateUserName(){
 var uname = document.forms["nameForm"]["uname"].value;
-if(uname=="")
+if(uname==""||uname.length<3)
 {
     return false;
 }
