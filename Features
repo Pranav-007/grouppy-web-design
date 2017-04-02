@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Grouppy | Login</title>
+    <?php
+    include 'cdn/CDN.php';
+    ?>
+    <link rel="stylesheet" href="css/signup.css">
+
+<style>
+select {
+
+    box-shadow: 5px 5px 5px #575757;
+
+    padding: 5px;
+border-radius:4px;
+margin-left:0;
+margin-top: 5%;
+    max-width:85%;
+    width: 100%;
+    height: 20%;
+    font-size:14pt;
+}
+.button {
+  display: inline-block;
+  padding: 0
+  font-size: 24px;
+  cursor: pointer;
+  background-color:#778899;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #f1f1f1;
+  
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="headerS">
+    <img src="" alt="" class="img-rounded" width="40px" height="40px">Grouppy
+</div>
+<br>
+<div class="container">
+    <div class="card">
+        <div>
+            <h1><span class="glyphicon glyphicon-share"></span>Add Features Here.!</h1>
+        </div>
+        <br>
+
+        <form name="nameForm" method="post">
+
+<select id="country" name="country">
+    <option value="au">Australia</option>
+    <option value="ca">Canada</option>
+    <option value="usa">USA</option>
+  </select>
+
+<br>
+
+
+            <h6>Teacher-ID:</h6>
+            <input name="uname" class="form-control inputBox-large-width inputBox inputBox-large-height" placeholder="Enter id here" type="text" id="username">
+            <h6>E-Mail Address:</h6>
+
+            <input  name="pass"  class="form-control inputBox-large-width inputBox inputBox-large-height" placeholder="someone@gmail.com" type="text" id="password">
+
+<br>
+<button class="button">+Add</button>
+<br>
+
+
+            <Button class="btn btn-default button-med-width">Submit Here&nbsp<span class="glyphicon glyphicon-arrow-right"></span></Button>
+        </form>
+
+    </div>
+    <p id="demo"></p>
+</div>
+</body>
+</html>
+
